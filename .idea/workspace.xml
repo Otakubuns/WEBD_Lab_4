@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2003930d-79cc-4c2e-8fc9-fd9b4f6891fc" name="Changes" comment="added password reset/sessions and finished video tutorial">
-      <change afterPath="$PROJECT_DIR$/app/views/registration_mailer/register.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/registration_mailer/register.text.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/registrations/new.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="2003930d-79cc-4c2e-8fc9-fd9b4f6891fc" name="Changes" comment="added name column to user table, and added to form and sign up email" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +156,7 @@
       <workItem from="1700957932007" duration="653000" />
       <workItem from="1701041306002" duration="1973000" />
       <workItem from="1701043821952" duration="11041000" />
-      <workItem from="1701055187899" duration="892000" />
+      <workItem from="1701055187899" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="added flash message functionality">
       <option name="closed" value="true" />
@@ -179,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701054814430</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added name column to user table, and added to form and sign up email">
+      <option name="closed" value="true" />
+      <created>1701056397452</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701056397452</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +191,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added flash message functionality" />
     <MESSAGE value="added password reset/sessions and finished video tutorial" />
-    <option name="LAST_COMMIT_MESSAGE" value="added password reset/sessions and finished video tutorial" />
+    <MESSAGE value="added name column to user table, and added to form and sign up email" />
+    <option name="LAST_COMMIT_MESSAGE" value="added name column to user table, and added to form and sign up email" />
   </component>
 </project>
