@@ -13,6 +13,9 @@ Already have an account? <%= link_to "Log In", sign_in_path %>
       <%= form.text_field :email, class: "form-control", placeholder: "JohnDoe@example.com" %>
     </div>
     <div class="mb-3">
+      <%= form.text_field :name, class: "form-control", placeholder: "John Doe" %>
+    </div>
+    <div class="mb-3">
       <%= form.password_field :password, class: "form-control", placeholder: "Password" %>
     </div>
     <div class="mb-3">

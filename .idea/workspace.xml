@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2003930d-79cc-4c2e-8fc9-fd9b4f6891fc" name="Changes" comment="added flash message functionality">
-      <change afterPath="$PROJECT_DIR$/app/views/password_resets/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/password_resets/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/passwords/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/registrations/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterDir="false" />
+    <list default="true" id="2003930d-79cc-4c2e-8fc9-fd9b4f6891fc" name="Changes" comment="added password reset/sessions and finished video tutorial">
+      <change afterPath="$PROJECT_DIR$/app/views/registration_mailer/register.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/registration_mailer/register.text.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/registrations/new.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +36,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/alexu/RubymineProjects/scheduled_tweets/app/views/registration_mailer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexu\RubymineProjects\scheduled_tweets\app\views\registration_mailer" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="rails generate controller MainController" />
@@ -76,6 +72,11 @@
       <command value="rails generate model Password_Resets" />
       <command value="rails generate controller PasswordResets" />
       <command value="rails generate mailer Password reset" />
+      <command value="rails generate migration" />
+      <command value="rails generate migration User" />
+      <command value="rails generate migration CreateUser" />
+      <command value="rails generate migration add_name_to_users name:string" />
+      <command value="rails generate mailer Registration" />
     </option>
   </component>
   <component name="RunManager" selected="Rails.scheduled_tweets">
@@ -159,7 +160,8 @@
       <workItem from="1700952868974" duration="2370000" />
       <workItem from="1700957932007" duration="653000" />
       <workItem from="1701041306002" duration="1973000" />
-      <workItem from="1701043821952" duration="10501000" />
+      <workItem from="1701043821952" duration="11041000" />
+      <workItem from="1701055187899" duration="892000" />
     </task>
     <task id="LOCAL-00001" summary="added flash message functionality">
       <option name="closed" value="true" />
@@ -169,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700956080431</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added password reset/sessions and finished video tutorial">
+      <option name="closed" value="true" />
+      <created>1701054814430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701054814430</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +187,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added flash message functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added flash message functionality" />
+    <MESSAGE value="added password reset/sessions and finished video tutorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="added password reset/sessions and finished video tutorial" />
   </component>
 </project>
