@@ -1,0 +1,16 @@
+<h1>Sign In</h1>
+Don't have an account? <%= link_to "Sign Up", sign_up_path %>
+<%= form_with url: sign_in_path do |form| %>
+  <div class="w-25">
+    <div class="mb-3">
+      <%= form.text_field :email, class: "form-control", placeholder: "JohnDoe@example.com" %>
+    </div>
+    <div class="mb-3">
+      <%= form.password_field :password, class: "form-control", placeholder: "Password" %>
+      <%= link_to "Forgot Password?", password_reset_path %>
+    </div>
+    <div class="mb-3">
+      <%= form.submit "Sign In", class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
